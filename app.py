@@ -7,7 +7,7 @@ import torch
 @st.cache(allow_output_mutation=True)
 def get_model():
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    model = BertForSequenceClassification.from_pretrained("saadkiet/Fine_Tuned_bert_toxic_non_toxic")
+    model = BertForSequenceClassification.from_pretrained("distilbert-base-uncased") #saadkiet/Fine_Tuned_bert_toxic_non_toxic
     return tokenizer, model
 
 
