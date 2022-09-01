@@ -4,7 +4,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 import torch
 
 st.header("Sentiment Analyzer 🤓")
-st.markdown("Please a text in the empty box below and click on Analyze button)
+st.markdown("Please a text in the empty box below and click on Analyze button")
 @st.cache(allow_output_mutation=True)
 def get_model():
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
